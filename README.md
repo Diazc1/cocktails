@@ -1,2 +1,2 @@
 # cocktails
-phase 1 project, second attempt
+Phase 1 project, second attempt
