@@ -1,4 +1,6 @@
 #puts "environment"
+require 'pry'
+
 
 require_relative '../lib/module/cocktail'
 require_relative '../lib/api'
