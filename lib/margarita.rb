@@ -1,2 +1,2 @@
-class Margarita
+class Cocktail::Margarita
 end
