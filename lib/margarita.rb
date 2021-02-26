@@ -1,4 +1,4 @@
-# class Margarita
+class Cocktail::Margarita
 
 #     @@all = []
 
@@ -20,4 +20,4 @@
 
 
 
-# end
+end

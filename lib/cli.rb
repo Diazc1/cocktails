@@ -1,4 +1,4 @@
-# class CLI
+class Cocktail::CLI
 
 #     def start
 #         puts "Welcome user"
@@ -47,4 +47,4 @@
 #         puts "Don't drink and drive! Goodbye."
 #     end
 
-# end
+end
