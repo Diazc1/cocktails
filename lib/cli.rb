@@ -25,6 +25,16 @@ class Cocktail::CLI
         puts "1. margarita 1"
         puts "2. margarita 2"
         puts "3. margarita 3"
+        puts ""
+        puts ""
+        puts "which margarita would you like the instructions for?"
+        input = gets.strip
+
+        margarita_instructions(input)
+    end
+
+    def margarita_instructions(margarita)
+        puts "#{margarita}"
     end
 
     def invalid_entry
