@@ -1,48 +1,50 @@
-class Cocktail::CLI
+# class CLI
 
-    def call
-        puts "Welcome user"
-        puts "To see available margaritas, enter 'margaritas'"
-        puts "To exit menu, enter 'exit'"
-        menu
-    end
+#     def start
+#         puts "Welcome user"
+#         puts "To see available margaritas, enter 'margaritas'"
+#         puts "To exit menu, enter 'exit'"
+#         menu
+#     end
 
-    def menu         
-        input = gets.strip
+#     def menu         
+#         input = gets.strip
 
-        if input == "margaritas"
-            margaritas_list
-            menu
-        elsif input == "exit"
-            goodbye
-        else
-            invalid_entry
-            menu
-        end
-    end
+#         if input == "margaritas"
+#             margaritas_list
+#             menu
+#         elsif input == "exit"
+#             goodbye
+#         else
+#             invalid_entry
+#             menu
+#         end
+#     end
 
-    def margaritas_list
-        puts "1. margarita 1"
-        puts "2. margarita 2"
-        puts "3. margarita 3"
-        puts ""
-        puts ""
-        puts "which margarita would you like the instructions for?"
-        input = gets.strip
+#     def margaritas_list
+#         puts "1. margarita 1"
+#         puts "2. margarita 2"
+#         puts "3. margarita 3"
+#         puts ""
+#         puts ""
+#         puts "which margarita would you like the instructions for?"
+#         input = gets.strip
 
-        margarita_instructions(input)
-    end
+#         margarita_instructions(input)
+#     end
 
-    def margarita_instructions(margarita)
-        puts "#{margarita}"
-    end
+#     def margarita_instructions(margarita)
+#         puts "#{margarita}"
 
-    def invalid_entry
-        puts "Invalid entry, try again"
-    end
+#         Margarita.find_margarita(selection)
+#     end
 
-    def goodbye
-        puts "Don't drink and drive! Goodbye."
-    end
+#     def invalid_entry
+#         puts "Invalid entry, try again"
+#     end
 
-end
+#     def goodbye
+#         puts "Don't drink and drive! Goodbye."
+#     end
+
+# end
