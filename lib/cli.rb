@@ -1,5 +1,6 @@
 class Cocktail::CLI
 
+    puts "hi"
 #     def start
 #         puts "Welcome user"
 #         puts "To see available margaritas, enter 'margaritas'"
