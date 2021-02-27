@@ -1,22 +1,19 @@
 class Margarita
 
-#     @@all = []
+    @@all = []
 
-#     attr_accessor :strdrink, :strinstructions
 
-#     def initialize(strdrink, strinstructions)
-#         @strdrink = strdrink
-#         @strinstructions = strinstructions
-#         save
-#     end
+    def initialize(margarita_hash)
+        margarita_hash.each do |key, value|
+            self.class.attr_accessor(key)
+            self.send("#{key}=", value)
+        end
+        @@all << self
+    end
 
-#     def save
-#         @@all << self
-#     end
-
-#     def self.all
-#         @@all
-#     end
+    def self.all
+        @@all
+    end
 
 
 
