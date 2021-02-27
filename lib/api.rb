@@ -1,4 +1,14 @@
-class Cocktail::API
+class API
+
+    def initialize
+        @url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita"
+    end
+
+    def get_data
+        response_hash = HTTParty.get(@url)
+
+
+    end
 
 
 #     def self.get_maragrita_data    #got the data here 
@@ -13,7 +23,7 @@ class Cocktail::API
 #         end
 #     end
 
-
+ 
 
 
 end

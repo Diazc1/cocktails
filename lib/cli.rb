@@ -1,9 +1,9 @@
-class Cocktail::CLI
+class CLI
 
 
     def start
 #         greeting
-#         Cocktail::API.grab_data                   #puts "To exit menu, enter 'exit'"
+#         Cocktail::API.new.create_margarita_objects()                #puts "To exit menu, enter 'exit'"
 #         menu
     end
 

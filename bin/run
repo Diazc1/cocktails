@@ -3,4 +3,4 @@
 require_relative '../config/environment'
 
 
-Cocktail::CLI.new.start
+API.new.get_margarita_data

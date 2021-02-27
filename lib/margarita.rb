@@ -1,4 +1,4 @@
-class Cocktail::Margarita
+class Margarita
 
 #     @@all = []
 
