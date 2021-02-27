@@ -1,12 +1,16 @@
 class Cocktail::CLI
 
-    puts "hi"
-#     def start
-#         puts "Welcome user"
-#         puts "To see available margaritas, enter 'margaritas'"
-#         puts "To exit menu, enter 'exit'"
+
+    def start
+#         greeting
+#         Cocktail::API.grab_data                   #puts "To exit menu, enter 'exit'"
 #         menu
-#     end
+    end
+
+    #def greeting
+        #puts "Welcome to the Make Your Own Margarita Bar!"
+        #puts "To see available margaritas, enter 'margarita'"
+    #end
 
 #     def menu         
 #         input = gets.strip
