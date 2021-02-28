@@ -16,7 +16,10 @@ class Margarita
         @@all
     end
 
-    def  self.find_margarita()
+    def  self.find_margarita(margarita_strDrink)
+        self.all.find do |margarita|
+            margarita.strDrink == margarita_strDrink
+        end
     end
 
 end
