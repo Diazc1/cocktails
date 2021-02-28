@@ -2,57 +2,61 @@ class CLI
 
     def initialize
         API.new.get_margarita_data
+        binding.pry
     end
 
     def start
         greeting
         menu
     end
-#puts "To exit menu, enter 'exit'"
+
+    def user_input
+        gets.strip
+    end
 
     def greeting
         puts "Welcome to the 'Make Your Own Margarita Bar'!"
         puts "To see available margaritas, enter 'margarita'"
+        puts "To exit menu, enter 'exit'"
+        menu
     end
 
-#     def menu         
-#         input = gets.strip
+    def margaritas_list
+        Margarita.all.each.with_index(1) do |margarita, index|
+            puts "#{index}. #{margarita}"
+        end
+    end
 
-#         if input == "margaritas"
-#             margaritas_list
-#             menu
-#         elsif input == "exit"
-#             goodbye
-#         else
-#             invalid_entry
-#             menu
-#         end
-#     end
+    def invalid_entry
+        puts "Invalid entry, try again"
+    end
 
-#     def margaritas_list
-#         puts "1. margarita 1"
-#         puts "2. margarita 2"
-#         puts "3. margarita 3"
-#         puts ""
-#         puts ""
-#         puts "which margarita would you like the instructions for?"
-#         input = gets.strip
+    def goodbye
+        puts "Don't drink and drive! Goodbye."
+    end
 
-#         margarita_instructions(input)
-#     end
+    def margarita_instructions
+        puts "Which margarita would you like the instructions for?"
 
-#     def margarita_instructions(margarita)
-#         puts "#{margarita}"
+        selection = user_input
 
-#         Margarita.find_margarita(selection)
-#     end
+        puts "#{selection}"
+        Margarita.
+    end
 
-#     def invalid_entry
-#         puts "Invalid entry, try again"
-#     end
 
-#     def goodbye
-#         puts "Don't drink and drive! Goodbye."
-#     end
+    def menu         
+        selection = user_input
+
+        if selection == "margarita"
+            margaritas_list
+            menu
+        elsif selection == "exit"
+            goodbye
+        else
+            invalid_entry
+            menu
+        end
+    end
 
 end

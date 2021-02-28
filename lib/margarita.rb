@@ -16,5 +16,8 @@ class Margarita
         @@all
     end
 
+    def  self.find_margarita()
+    end
+
 end
 
