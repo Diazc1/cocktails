@@ -1,16 +1,19 @@
 class CLI
 
-
-    def start
-#         greeting
-#         Cocktail::API.new.create_margarita_objects()                #puts "To exit menu, enter 'exit'"
-#         menu
+    def initialize
+        API.new.get_margarita_data
     end
 
-    #def greeting
-        #puts "Welcome to the Make Your Own Margarita Bar!"
-        #puts "To see available margaritas, enter 'margarita'"
-    #end
+    def start
+        greeting
+        menu
+    end
+#puts "To exit menu, enter 'exit'"
+
+    def greeting
+        puts "Welcome to the 'Make Your Own Margarita Bar'!"
+        puts "To see available margaritas, enter 'margarita'"
+    end
 
 #     def menu         
 #         input = gets.strip
