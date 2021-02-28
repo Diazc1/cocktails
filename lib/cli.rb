@@ -37,7 +37,6 @@ class CLI
         puts " "
         puts "To see available margaritas, enter 'margarita'"
         puts " "
-        menu
     end
 
     def margaritas_list
@@ -68,7 +67,6 @@ class CLI
         puts " "
         puts "To make another selection, enter 'continue'"
         puts "or to exit menu enter 'exit'"
-        menu
     end
 
 
